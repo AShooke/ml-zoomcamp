@@ -1,24 +1,20 @@
 # Machine Learning Zoomcamp 2026
 
-This repository tracks my homework, practice notebooks, and projects for the DataTalksClub Machine Learning Zoomcamp 2026 course.
+This repository contains the completed work for Module 1, Introduction to Machine Learning, of the DataTalksClub Machine Learning Zoomcamp 2026 course. The current project is centered on Homework 1 and uses a car fuel efficiency dataset to practice core data analysis and machine learning concepts.
 
-## Course Syllabus
+## Module 1 Overview
 
-- [x] Module 1: Introduction to Machine Learning
-  - [Homework 1](01-intro/homework_1.ipynb)
-- [ ] Module 2: Regression
-- [ ] Module 3: Classification
-- [ ] Module 4: Evaluation
-- [ ] Module 5: Deploying Machine Learning Models
-- [ ] Module 6: Decision Trees and Ensemble Learning
-- [ ] Module 7: Neural Networks and Deep Learning
-- [ ] Module 8: Kubernetes and TensorFlow Serving
-- [ ] Module 9: Serverless Deep Learning
-- [ ] Module 10: Capstone Projects
+Module 1 introduces the machine learning workflow and foundational tools used throughout the course. The completed [Homework 1 notebook](01-intro/homework_1.ipynb) covers:
 
-## Environment Setup
+- CRISP-DM and the main stages of a machine learning project
+- Pandas and NumPy refreshers for loading, inspecting, and transforming data
+- Missing-value analysis and mode-based imputation
+- Filtering and aggregating tabular data
+- Normal equation implementation using matrix operations
 
-This project uses Python and a virtual environment for dependency isolation.
+## Local Setup
+
+Create and activate the Python virtual environment from the repository root, then install the required packages.
 
 ### Windows PowerShell
 
@@ -38,4 +34,4 @@ python -m pip install --upgrade pip
 pip install pandas numpy matplotlib seaborn jupyter ipykernel
 ```
 
-Open the notebooks in VS Code or Jupyter after activating the environment. The virtual environment remains at the repository root and is excluded from version control.
+After activating the environment, open `01-intro/homework_1.ipynb` in VS Code or launch Jupyter to run the notebook.

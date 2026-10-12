@@ -1,6 +1,6 @@
 # Machine Learning Zoomcamp 2026
 
-This repository contains the completed work for Module 1 and Module 2 of the DataTalksClub Machine Learning Zoomcamp 2026 course. The project focuses on an introductory machine learning workflow and a regression-focused analysis using a car fuel efficiency dataset.
+This repository contains the completed work for Modules 1, 2, and 3 of the DataTalksClub Machine Learning Zoomcamp 2026 course. The project covers an introductory machine learning workflow, regression, and classification.
 
 ## Project Structure
 
@@ -10,6 +10,8 @@ This repository contains the completed work for Module 1 and Module 2 of the Dat
 │   └── homework_1.ipynb
 ├── 02-regression/
 │   └── homework_2.ipynb
+├── 03-classification/
+│   └── homework_3.ipynb
 ├── .gitignore
 └── README.md
 ```
@@ -36,6 +38,16 @@ Module 2 focuses on regression modeling and evaluation using the fuel efficiency
 - Model stability evaluation across multiple random seeds via standard deviation of RMSE
 - Final model training on concatenated (Train + Validation) sets and evaluation on the Test set
 
+## Module 3: Machine Learning for Classification
+
+Module 3 applies classification methods to a lead-scoring dataset. The completed [Homework 3 notebook](03-classification/homework_3.ipynb) covers:
+
+- Categorical and numerical missing-value handling and feature exploration
+- Reproducible 60% / 20% / 20% train / validation / test split
+- Training-set mutual information analysis for categorical features
+- One-hot encoding and logistic regression evaluation
+- Feature elimination and regularization parameter tuning
+
 ## Local Setup
 
 Create and activate the Python virtual environment from the repository root, then install the required packages.
@@ -46,7 +58,7 @@ Create and activate the Python virtual environment from the repository root, the
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install pandas numpy matplotlib seaborn jupyter ipykernel
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter ipykernel
 ```
 
 ### macOS and Linux
@@ -55,7 +67,7 @@ pip install pandas numpy matplotlib seaborn jupyter ipykernel
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-pip install pandas numpy matplotlib seaborn jupyter ipykernel
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter ipykernel
 ```
 
 After activating the environment, open the notebook files in VS Code or launch Jupyter to run them.

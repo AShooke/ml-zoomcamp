@@ -1,6 +1,6 @@
 # Machine Learning Zoomcamp 2026
 
-This repository contains the completed work for Modules 1, 2, and 3 of the DataTalksClub Machine Learning Zoomcamp 2026 course. The project covers an introductory machine learning workflow, regression, and classification.
+This repository contains the completed work for Modules 1, 2, 3, and 4 of the DataTalksClub Machine Learning Zoomcamp 2026 course. The project covers an introductory machine learning workflow, regression, classification, and model evaluation.
 
 ## Project Structure
 
@@ -12,6 +12,8 @@ This repository contains the completed work for Modules 1, 2, and 3 of the DataT
 │   └── homework_2.ipynb
 ├── 03-classification/
 │   └── homework_3.ipynb
+├── 04-evaluation/
+│   └── homework_4.ipynb
 ├── .gitignore
 └── README.md
 ```
@@ -47,6 +49,16 @@ Module 3 applies classification methods to a lead-scoring dataset. The completed
 - Training-set mutual information analysis for categorical features
 - One-hot encoding and logistic regression evaluation
 - Feature elimination and regularization parameter tuning
+
+## Module 4: Evaluation Metrics for Classification
+
+Module 4 evaluates a logistic regression model for lead conversion. The completed [Homework 4 notebook](04-evaluation/homework_4.ipynb) covers:
+
+- ROC AUC as a measure of numerical feature importance and validation model performance
+- Precision and recall across decision thresholds, including their closest point of intersection
+- F1 score threshold selection
+- Five-fold cross-validation and ROC AUC variability
+- Regularization strength tuning with cross-validation
 
 ## Local Setup
 

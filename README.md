@@ -1,6 +1,6 @@
 # Machine Learning Zoomcamp 2026
 
-This repository contains the completed work for Modules 1, 2, 3, and 4 of the DataTalksClub Machine Learning Zoomcamp 2026 course. The project covers an introductory machine learning workflow, regression, classification, and model evaluation.
+This repository contains the completed work for Modules 1, 2, 3, 4, and 5 of the DataTalksClub Machine Learning Zoomcamp 2026 course. The project covers an introductory machine learning workflow, regression, classification, model evaluation, and deployment.
 
 ## Project Structure
 
@@ -14,6 +14,18 @@ This repository contains the completed work for Modules 1, 2, 3, and 4 of the Da
 │   └── homework_3.ipynb
 ├── 04-evaluation/
 │   └── homework_4.ipynb
+├── 05-deployment/
+│   ├── Dockerfile
+│   ├── feature_defaults.json
+│   ├── model.py
+│   ├── model_metadata.json
+│   ├── pipeline.bin
+│   ├── pyproject.toml
+│   ├── predict.py
+│   ├── q3_predict_script.py
+│   ├── q6_test.py
+│   ├── uv.lock
+│   └── .python-version
 ├── .gitignore
 └── README.md
 ```
@@ -59,6 +71,23 @@ Module 4 evaluates a logistic regression model for lead conversion. The complete
 - F1 score threshold selection
 - Five-fold cross-validation and ROC AUC variability
 - Regularization strength tuning with cross-validation
+
+## Module 5: Machine Learning Deployment
+
+Module 5 loads the trained `pipeline.bin` model to predict lead conversion. The `05-deployment` directory contains a standalone prediction script, a FastAPI web service, a `requests` smoke-test client, and a Dockerfile for Dockerizing the application. Place `pipeline.bin` in that directory.
+
+Start the service from `05-deployment`:
+
+```powershell
+uv run uvicorn predict:app --host 0.0.0.0 --port 9696
+```
+
+The service provides `GET /health` and `POST /predict`. Run `python q6_test.py` in another terminal to send the sample prediction request. To build and run the Docker image from `05-deployment`:
+
+```powershell
+docker build -t ml-zoomcamp-homework5 .
+docker run --rm -p 9696:9696 ml-zoomcamp-homework5
+```
 
 ## Local Setup
 
